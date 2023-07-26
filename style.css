@@ -1,0 +1,86 @@
+/* Global Variables */
+* {
+  background-color: rgb(79, 129, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Useful classes */
+.center {
+  text-align: center;
+}
+
+.btn {
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.delete-alarm {
+  background: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.current-time {
+  font-size: xx-large;
+  color: blue;
+  display: inline-flex;
+  padding: 10px;
+  background-color: rgb(211, 190, 164);
+  border-radius: 10px;
+}
+
+.page-title {
+  color: white;
+  font-size: larger;
+}
+
+.clock-container {
+  /* background-color: aliceblue; */
+  display: inline-block;
+}
+
+.alarm-form {
+  background-color: rgba(211, 211, 252, 0.221);
+  display: inline-flex;
+}
+
+.alarm-form div {
+  background-color: transparent;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.submit-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: red;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* alarm */
+.alarm {
+  border: 2px solid white;
+}
+
+/* tag */
+select {
+  margin: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+option {
+  border-radius: 10px;
+  background-color: aliceblue;
+}
