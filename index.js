@@ -12,11 +12,14 @@ window.addEventListener("DOMContentLoaded", () => {
   setValue(0, 59, setMinute);
   setValue(0, 59, setSecond);
 
+  // run after every 1second
   setInterval(getCurrTime, 1000);
+
+  // fetching the alarm if its present in the local storage
   fetchAlarm();
 });
 
-// if user click on submit button then call getInput function
+// if user click on set alarm button then call getInput function
 setAlarmBtn.addEventListener("click", getInput);
 
 // getinput will call when user click on Set Alarm button
@@ -43,14 +46,13 @@ function setAlarm(alarmTime, fetching = false) {
   const alarmId = setInterval(() => {
     if (alarmTime === getCurrTime()) {
       window.alert("Alarm");
-    } else {
-      console.log("Runnnning..");
     }
   }, 500);
 
   // console.log(alarmId);
   setAlarmToDOM(alarmTime, alarmId);
 
+  // if fetching is false the save it to the local storage
   if (!fetching) {
     saveAlarm(alarmTime);
   }
